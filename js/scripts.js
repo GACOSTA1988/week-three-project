@@ -54,10 +54,10 @@ if (number === "4") {
 }
 // THIS WILL RETURN "0","Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." AND NUMBERS INBETWEEN UP TILL THE ENTERED VALUE
   if (number > 4) {
-  number = parseInt.number()+ 1;
-  convertedNumbers = convertedNumbers + myGreaterFive + ", " + number
-  console.log(number)
-  return convertedNumbers
+  var newNumber = parseInt(number) - 1;
+  convertedNumbers = convertedNumbers + myGreaterFive + ", " + newNumber + ", " + number[i];
+  console.log(number);
+  return convertedNumbers;
 }
 };
 
