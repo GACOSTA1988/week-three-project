@@ -45,12 +45,16 @@ for (i=0; i<number.length; i++) {
     return convertedNumbers;
   }
 };
+// THIS LOOP WILL IDENTIFY WHEN NUMBER ENTERED IS > 5
 for (var i = 0; i < number.length; i++) {
+  // THIS WILL RETURN "0","Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." WHEN NUMBER ENTERED IS = 4
 if (number === "4") {
   convertedNumbers = convertedNumbers + myGreaterFive + ", " + number[i];
   return convertedNumbers
-} else if (number > 4) {
-  number = number[i].repeat(number + 1);
+}
+// THIS WILL RETURN "0","Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." AND NUMBERS INBETWEEN UP TILL THE ENTERED VALUE
+  if (number > 4) {
+  number = parseInt.number()+ 1;
   convertedNumbers = convertedNumbers + myGreaterFive + ", " + number
   console.log(number)
   return convertedNumbers
