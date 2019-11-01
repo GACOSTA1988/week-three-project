@@ -1,3 +1,11 @@
+# George Acosta Portfolio
+
+#### This application displays takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions.
+
+#### By George Acosta
+
+## Exceptions
+
 1. Spec: The program returns a range of numbers from 0 to the users inputted number
 Input: "4"
 Output: "0, 1, 2, 3, 4"
@@ -21,3 +29,19 @@ COMPLETE
 5. Spec: the program includes all the elements  "Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." for numbers that dont include 1 or 2 or 3.
 Input: 5
 Output: "0", "Beep!", "Boop", "I'm Sorry...", 4, 5
+
+## Setup
+* Clone portfolio this repository
+* Open simple HTTP server in the clone directory
+* Open browser of choice
+
+## Technologies Used
+1. css
+2. bootstrap
+3. Jquery
+
+[GitHub Pages Link](https://gacosta1988.github.io/my-portfolio/)
+
+
+## Copyright (c) 2019 George Acosta
+#### This Software is licensed under the MIT licensed
