@@ -25,7 +25,15 @@ for (i=0; i<number.length; i++) {
 
 for (i=0; i<number.length; i++) {
   if (keyNumbers.includes(number[i])) {
-    convertedNumbers = convertedNumbers + words;
+    convertedNumbers = convertedNumbers + words [0];
+    return convertedNumbers;
+  }
+  if (keyNumbers.includes(number[i])) {
+    convertedNumbers = convertedNumbers + words [1];
+    return convertedNumbers;
+  }
+  if (keyNumbers.includes(number[i])) {
+    convertedNumbers = convertedNumbers + words [2];
     return convertedNumbers;
   }
 };
