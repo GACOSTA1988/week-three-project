@@ -1,12 +1,13 @@
 // BUSINESS LOGIC
 
-
+// MY FUNCTION NAME
 function converter(number) {
 
-
+// MY VARIABLES TO CALL ON FUNCTIONS
 var words = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!", "test"]
 var keyNumbers = ["3", "2", "1"]
 var convertedNumbers ="";
+var myGreaterFive = [" 0"," Beep!", " Boop!", " I'm sorry, Dave. I'm afraid I can't do that."]
 
 // RETURN THE WORD IN REGARDS TO ITS SPECIFIC number
 // THIS WILL RETURN I'm sorry, Dave. I'm afraid I can't do that WHEN NUMBER 3 IS ENTERED
@@ -46,12 +47,15 @@ for (i=0; i<number.length; i++) {
 };
 for (var i = 0; i < number.length; i++) {
 if (number === "4") {
-  var myGreaterFive = [" 0"," Beep!", " Boop!", " I'm sorry, Dave. I'm afraid I can't do that. "]
-
   convertedNumbers = convertedNumbers + myGreaterFive + ", " + number[i];
   return convertedNumbers
-};
+} else if (number > 4) {
+  number = number[i].repeat(number + 1);
+  convertedNumbers = convertedNumbers + myGreaterFive + ", " + number
+  console.log(number)
+  return convertedNumbers
 }
+};
 
 
 };
