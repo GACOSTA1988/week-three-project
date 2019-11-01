@@ -12,32 +12,32 @@ var convertedNumbers ="";
 // THIS WILL RETURN I'm sorry, Dave. I'm afraid I can't do that WHEN NUMBER 3 IS ENTERED
 for (i=0; i<number.length; i++) {
   if ( number === "3") {
-    convertedNumbers = convertedNumbers + words [0];
+    convertedNumbers = convertedNumbers + words[0];
     return convertedNumbers;
   }
   // THIS WILL RETURN BOOP WHEN NUMBER 2 IS ENTERED
   if ( number === "2") {
-    convertedNumbers = convertedNumbers + words [1];
+    convertedNumbers = convertedNumbers + words[1];
     return convertedNumbers;
   }
   // THIS WILL RETURN BEEP WHEN 1 IS ENTERED
   if ( number === "1") {
-    convertedNumbers = convertedNumbers + words [2];
+    convertedNumbers = convertedNumbers + words[2];
     return convertedNumbers;
   }
 };
 // THIS FOR LOOP WILL DETECT IF ANY OF THE keyNumbers ARRAY ELEMENTS ARE INCLUDED IN THE INPUT NUMBERS
 for (i=0; i<number.length; i++) {
-  if (keyNumbers.includes(number[i])) {
+  if (number.includes(keyNumbers[0])) {
     convertedNumbers = number+ words[0];
     return convertedNumbers;
   }
-  if (keyNumbers.includes(number[i])) {
-    convertedNumbers = convertedNumbers + words[1];
+  if (number.includes(keyNumbers[1])) {
+    convertedNumbers = number+ words[1];
     return convertedNumbers;
   }
-  if (keyNumbers.includes(number[i])) {
-    convertedNumbers = convertedNumbers + words[2];
+  if (number.includes(keyNumbers[2])) {
+    convertedNumbers = number+ words[2];
     return convertedNumbers;
   }
 };
