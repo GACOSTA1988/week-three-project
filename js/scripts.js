@@ -1,11 +1,33 @@
 // BUSINESS LOGIC
 
 
-function converter(number){
+function converter(number) {
 
 
-  var words = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"] 
+var words = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
 
+var convertedNumbers ="";
+
+for (i=0; i<number.length; i++) {
+  if ( number === "3") {
+    convertedNumbers = convertedNumbers + words [0];
+    return convertedNumbers;
+  }
+  if ( number === "2") {
+    convertedNumbers = convertedNumbers + words [1];
+    return convertedNumbers;
+  }
+  if ( number === "1") {
+    convertedNumbers = convertedNumbers + words [2];
+    return convertedNumbers;
+  }
+
+
+
+
+
+
+};
 };
 
 
