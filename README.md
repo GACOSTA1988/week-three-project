@@ -40,7 +40,6 @@ Output: "0", "Beep!", "Boop", "I'm Sorry...", 4, 5
 2. bootstrap
 3. Jquery
 
-[GitHub Pages Link](https://gacosta1988.github.io/my-portfolio/)
 
 
 ## Copyright (c) 2019 George Acosta
