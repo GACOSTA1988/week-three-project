@@ -4,8 +4,8 @@
 function converter(number) {
 
 
-var words = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
-
+var words = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!", "test"]
+var keyNumbers = ["3", "2", "1"]
 var convertedNumbers ="";
 
 for (i=0; i<number.length; i++) {
@@ -21,13 +21,17 @@ for (i=0; i<number.length; i++) {
     convertedNumbers = convertedNumbers + words [2];
     return convertedNumbers;
   }
-
-
-
-
-
-
 };
+
+for (i=0; i<number.length; i++) {
+  if (keyNumbers.includes(number)) {
+    convertedNumbers = convertedNumbers + words [3];
+    return convertedNumbers;
+  }
+};
+
+
+
 };
 
 
