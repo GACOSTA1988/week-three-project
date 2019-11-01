@@ -24,8 +24,8 @@ for (i=0; i<number.length; i++) {
 };
 
 for (i=0; i<number.length; i++) {
-  if (keyNumbers.includes(number)) {
-    convertedNumbers = convertedNumbers + words [3];
+  if (keyNumbers.includes(number[i])) {
+    convertedNumbers = convertedNumbers + words;
     return convertedNumbers;
   }
 };
