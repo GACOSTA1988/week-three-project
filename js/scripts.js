@@ -45,9 +45,11 @@ for (i=0; i<number.length; i++) {
   }
 };
 for (var i = 0; i < number.length; i++) {
-if (number >=4) {
-  convertedNumbers = 0,"Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that." + number;
+if (number === "4") {
+  var myGreaterFive = [" 0"," Beep!", " Boop!", " I'm sorry, Dave. I'm afraid I can't do that. "]
 
+  convertedNumbers = convertedNumbers + myGreaterFive + ", " + number[i];
+  return convertedNumbers
 };
 }
 
