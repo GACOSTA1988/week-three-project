@@ -87,8 +87,11 @@ function converter(number) {
 $(document).ready(function() {
   $("form#numbers").submit(function(event) {
     event.preventDefault();
+    // THIS WILL RECEIVE THE NUMBER INPUTED ON ENTRY FORM
     var input = $("#numberEnterLine").val();
+    // THIS WILL HOLD RECEIVE THE RESULTS OF THE CONVERTER FUNCTION
     var output = converter(input);
+    // THIS WILL SEND RESULTS TO THE DESIRED HTML LOCATION
     $("#results").text(output);
   });
 });
