@@ -13,28 +13,29 @@ function converter(number) {
 
 // WILL POTENTIAL REMOTE BELOW FIRTS SECTION SINCE SPECS WILL BE COVERED BY SECTION 2
 
+// ENDED UP REMOVING SECTION 1
 
 // SECTION 1
   // RETURN THE WORD IN REGARDS TO ITS SPECIFIC number
   // THIS WILL RETURN I'm sorry, Dave. I'm afraid I can't do that WHEN NUMBER 3 IS ENTERED
-  for (i=0; i<number.length; i++) {
-    if ( number === "3") {
-      convertedNumbers = convertedNumbers + words[0];
-      return convertedNumbers;
-    }
-
-    // THIS WILL RETURN BOOP WHEN NUMBER 2 IS ENTERED
-    if ( number === "2") {
-      convertedNumbers = convertedNumbers + words[1];
-      return convertedNumbers;
-    }
-
-    // THIS WILL RETURN BEEP WHEN 1 IS ENTERED
-    if ( number === "1") {
-      convertedNumbers = convertedNumbers + words[2];
-      return convertedNumbers;
-    }
-  };
+  // for (i=0; i<number.length; i++) {
+  //   if ( number === "3") {
+  //     convertedNumbers = convertedNumbers + words[0];
+  //     return convertedNumbers;
+  //   }
+  //
+  //   // THIS WILL RETURN BOOP WHEN NUMBER 2 IS ENTERED
+  //   if ( number === "2") {
+  //     convertedNumbers = convertedNumbers + words[1];
+  //     return convertedNumbers;
+  //   }
+  //
+  //   // THIS WILL RETURN BEEP WHEN 1 IS ENTERED
+  //   if ( number === "1") {
+  //     convertedNumbers = convertedNumbers + words[2];
+  //     return convertedNumbers;
+  //   }
+  // };
 
 
 // SECTION 2
