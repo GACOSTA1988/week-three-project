@@ -6,7 +6,7 @@ function converter(number) {
   // MY VARIABLES TO CALL ON FUNCTIONS
   var words = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!", "test"]
   var keyNumbers = ["3", "2", "1"]
-  var convertedNumbers ="";
+  var convertedNumbers =[];
   var myGreaterFive = [" 0"," Beep!", " Boop!", " I'm sorry, Dave. I'm afraid I can't do that."]
 
 
@@ -73,12 +73,15 @@ function converter(number) {
     }
 
 
-    if (number > "4"){
-      return new array(end - start).fill().map((d, i)=> i + start)
-      var start =
-      myInclusiveKeywordRange(5,end[i])
-        console.log(myInclusiveKeywordRange);
-
+    if (number > "4") {
+      myInclusiveKeywordRange = [];
+      myInclusiveKeywordRange.forEach(function(number) {
+      console.log("hello");
+      // myInclusiveKeywordRange = new Array(number[i] - 4).fill().map((d, i)=> i + number[i]);
+      console.log("hello");
+      return myInclusiveKeywordRange
+      console.log(myInclusiveKeywordRange);
+    });
 
   };
 
