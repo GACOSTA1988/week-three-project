@@ -65,20 +65,32 @@ function converter(number) {
 
   // SECTION 3
   // THIS LOOP WILL IDENTIFY WHEN NUMBER ENTERED IS > 5
-  for (var i = 0; i < number.length; i++) {
+  for (i = 0; i < number.length; i++) {
     // THIS WILL RETURN "0","Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." WHEN NUMBER ENTERED IS = 4
     if (number === "4") {
       convertedNumbers = convertedNumbers + myGreaterFive + ", " + number[i];
       return convertedNumbers
     }
 
+
+    if (number > "4"){
+      return new array(end - start).fill().map((d, i)=> i + start)
+      var start =
+      myInclusiveKeywordRange(5,end[i])
+        console.log(myInclusiveKeywordRange);
+
+
+  };
+
+
+
     // THIS WILL RETURN "0","Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." AND NUMBERS IN BETWEEN UP TILL THE ENTERED VALUE
-    if (number > 4) {
-      var newNumber = parseInt(number) - 1;
-      convertedNumbers = convertedNumbers + myGreaterFive + ", " + newNumber + ", " + number[i];
-      console.log(number);
-      return convertedNumbers;
-    }
+    // if (number > 4) {
+    //   var newNumber = parseInt(number) - 1;
+    //   convertedNumbers = convertedNumbers + myGreaterFive + ", " + newNumber + ", " + number[i];
+    //   console.log(number);
+    //   return convertedNumbers;
+    // }
   };
 };
 
