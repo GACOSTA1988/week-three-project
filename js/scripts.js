@@ -40,6 +40,7 @@ function converter(number) {
 
 
           // SECTION 2
+
           // THIS FOR LOOP WILL DETECT IF ANY OF THE keyNumbers ARRAY ELEMENTS ARE INCLUDED IN THE INPUT NUMBERS
           for (i=0; i<number.length; i++) {
             // THIS WILL RETURN I'm sorry, Dave. I'm afraid I can't do that WHEN NUMBER 3 IS INCLUDED IN THE ENTERED NUMBER
@@ -66,12 +67,12 @@ function converter(number) {
 
           // SECTION 3
           // THIS LOOP WILL IDENTIFY WHEN NUMBER ENTERED IS > 5
-          for (i = 0; i < number.length; i++) {
+          // for (i = 0; i < number.length; i++) {
             // THIS WILL RETURN "0","Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." WHEN NUMBER ENTERED IS = 4
-            if (number === "4") {
-              convertedNumbers = convertedNumbers + myGreaterFive + ", " + number[i];
-              return convertedNumbers
-            }
+            // if (number === "4") {
+            //   convertedNumbers = convertedNumbers + myGreaterFive + ", " + number[i];
+            //   return convertedNumbers
+            // }
 
 
             //   if (number > 4) {
@@ -91,31 +92,75 @@ function converter(number) {
                 // THIS WILL RETURN "0","Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." AND NUMBERS IN BETWEEN UP TILL THE ENTERED VALUE
 
                 var myNumber = parseInt(number);
-                if (myNumber > 5) {
+                if (myNumber > 3) {
+                  console.log("hello");
+                  // decrement the number down to 4
+                  // each number from x down to 4, push into an array
+                  // var counter = myNumber;
 
-                  // THIS TAKES INPUT STRING AND TURNS INTO NUMBER
-                  console.log(myNumber);
+                  // DONT CHANGE THIS, BUT DELETE WHEN DONE
+                  // var numberList = myGreaterFive;
+                  // for (var i = 0; i <= myNumber; i++) {
+                  //
+                  //   if (i > 3) {
+                  //     numberList.push(i);
+                  //   }
+                  //
+                  // }
+                  // var myGreaterFive = [" 0"," Beep!", " Boop!", " I'm sorry, Dave. I'm afraid I can't do that."]
 
-                  // THIS VARIABLE WILL HOLD THE VALUE OF ORIGINAL INPUT NUMBER - 1
-                  var myNewNumber = myNumber-1
-                  console.log(myNewNumber);
+                  var newList = [];
 
-                  myNewNumber = myNewNumber -1
-                  console.log(myNewNumber);
+                  for (var i = 0; i <= myNumber; i++) {
+                    // if (i === 0) {
+                    //   newList.push(i.toString());
+                    // }
+                    if (i === 1) {
+                      newList.push("Beep!");
+                      continue;
+                    }
+                    if (i === 2) {
+                      newList.push("Boop!");
+                      continue;
+                    }
+                    if (i === 3) {
+                      newList.push(" I'm sorry, Dave. I'm afraid I can't do that.");
+                      continue;
+                    }
 
-                  // THIS UNDEFINED numberList VAR WILL HOUSE ALL NUMBERS PUSHED FROM myNewNumber var
-                  numberList = [];
-                  numberList.push(myNewNumber);
-                  console.log(numberList);
+                    newList.push(i.toString());
 
-                  // THIS WILL DEFINE WHAT MY RETURN VALUE WILL CONTAIN
-                  convertedNumbers = convertedNumbers + myGreaterFive + ", " + numberList + ", " + number;
+                  }
 
-                  while (!myNewNumber === 5)
-                  return convertedNumbers;
-                };
+                  console.log(newList);
+
+                //   while (myNewNumber !== 5){
+                //
+                //   // THIS TAKES INPUT STRING AND TURNS INTO NUMBER
+                //   console.log(myNumber);
+                //
+                //   // THIS VARIABLE WILL HOLD THE VALUE OF ORIGINAL INPUT NUMBER - 1
+                //   var myNewNumber = myNumber-1
+                //   console.log(myNewNumber);
+                //
+                //   myNewNumber = myNewNumber -1
+                //   console.log(myNewNumber);
+                //
+                //   // THIS UNDEFINED numberList VAR WILL HOUSE ALL NUMBERS PUSHED FROM myNewNumber var
+                //   numberList = [];
+                //   numberList.push(myNewNumber);
+                //   console.log(numberList);
+                //
+                //   // THIS WILL DEFINE WHAT MY RETURN VALUE WILL CONTAIN
+                //   convertedNumbers = convertedNumbers + myGreaterFive + ", " + numberList + ", " + number;
+                //   return convertedNumbers;
+                //
+                //     console.log("hello");
+                // };
+                return newList;
               };
-            };
+              };
+
 
 
 
