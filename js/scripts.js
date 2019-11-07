@@ -3,62 +3,36 @@
 
 // MY FUNCTION NAME
 function converter(number) {
-
-  // MY VARIABLES TO CALL ON FUNCTIONS
+  // LOCAL VARIABLES-SCOPED TO INSIDE OF THIS FUNCTION
   var myWords = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!", "test"]
-  var convertedNumbers =[];
-
-  // THIS LOOP WILLBE TO DETECT IF 3, 2, or 1 ARE INCLUDED IN THE INPUT NUMBERS
-  for (i=0; i<number.length; i++) {
-    // THIS WILL RETURN I'm sorry, Dave. I'm afraid I can't do that WHEN NUMBER 3 IS INCLUDED IN THE ENTERED NUMBER
-    if (number.includes(3)) {
-      convertedNumbers = convertedNumbers + myWords[0];
-      return convertedNumbers;
-    }
-
-    // THIS WILL RETURN BOOP WHEN NUMBER 2 IS INCULDED IN THE ENTERED NUMBER
-    if (number.includes(2)) {
-      convertedNumbers = convertedNumbers + myWords[1];
-      return convertedNumbers;
-    }
-
-    // THIS WILL RETURN BEEP WHEN NUMBER 1 IS INCULDED IN THE ENTERED NUMBER
-    if (number.includes(1)) {
-      convertedNumbers = convertedNumbers + myWords[2];
-      return convertedNumbers;
-    }
-  };
-
-  // THIS WILL RETURN: ,"Beep!", "Boop!","I'm sorry, Dave. I'm afraid I can't do that." AND
-  // EACH NUMBER FROM "INPUT NUMBER" DOWN TO 4. THEN WILL PUSH LOOP RETURNS INTO ARRAY
   var myNumber = parseInt(number);
-  if (myNumber > 3) {
-    // UNDEFINED ARRAY TO PUSH INTO
-    var myNewList = [];
+  var myNewList = [];
 
-    for (var i = 0; i <= myNumber; i++) {
+// FOR LOOP THAT WILL CREATE ARRAY OF NUMBERS
+  for (var i = 0; i <= myNumber; i++) {
+    myNewList.push(i);
+  }
 
-      if (i === 1) {
-        myNewList.push(myWords[2]);
-        continue;
-      }
-      if (i === 2) {
-        myNewList.push(myWords[1]);
-        continue;
-      }
-      if (i === 3) {
-        myNewList.push(myWords[0]);
-        continue;
-      }
-
-      myNewList.push(i.toString());
-
+// FOR LOOP THAT WILL MUTATE NUMBER ARRAY WITH DESIRED SPECS
+  for (var i=0; i<myNewList.length; i++) {
+    if (myNewList[i].toString().includes("3")) {
+      myNewList[i] = myWords[0]
     }
 
-    return myNewList;
-  };
-};
+    if (myNewList[i].toString().includes("2")) {
+      myNewList[i] = myWords[1]
+    }
 
+    if (myNewList[i].toString().includes("1")) {
+      myNewList[i] = myWords[2]
+    }
+  };
+  // TYPEOF NUMBER CHECK-✅😎
+  console.log(typeof myNewList[0]);
+  // TYPEOF STRING CHECK-✅😎
+  console.log(typeof myNewList[1]);
+  return myNewList;
+};
 // FRONT END LOGIC
 $(document).ready(function() {
   $("form#numbers").submit(function(event) {
